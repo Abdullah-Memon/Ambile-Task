@@ -125,17 +125,26 @@ document.addEventListener("DOMContentLoaded", function () {
       remarks: document.getElementById("remarks").value,
     };
 
-    // Disable button to prevent multiple clicks
     submitButton.textContent = "Submitting...";
     submitButton.disabled = true;
     loader.classList.remove("hidden");
 
-    if (Object.values(payload).some((value) => value.trim() === "")) {
+    const requiredFields = [
+      payload.category,
+      payload.siteName,
+      payload.nameOfWork,
+      payload.subCategory,
+      payload.numLabour,
+      payload.workProgress,
+      payload.qualityOfWork,
+      payload.completionDate,
+    ];
+
+    if (requiredFields.some((value) => value.trim() === "")) {
       loader.classList.add("hidden");
       submitButton.textContent = "Submit";
       submitButton.disabled = false;
       showToast("Please fill all required fields!", "warning");
-      console.log("Form submitted!");
       return;
     }
 
