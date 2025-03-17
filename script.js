@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (type === "success") {
       toast.classList.add("bg-green-600");
       toastIcon.innerHTML =
-        '<img src="./assets/success.svg" class="h-5 w-5" />';
+        '<img src="./assets/tick.svg" class="h-5 w-5" />';
     } else if (type === "warning") {
       toast.classList.add("bg-yellow-500");
       toastIcon.innerHTML =

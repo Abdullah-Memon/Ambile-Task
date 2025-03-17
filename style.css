@@ -18,5 +18,5 @@ select, input, option, textarea{
     outline: none;
     cursor: pointer;
     padding: 5px;
-    color: gray;
+    color: rgb(31, 31, 31);
 }
