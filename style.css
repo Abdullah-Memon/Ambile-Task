@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+
+}
+
+label{
+    color: rgb(21 128 61);
+}
+
+select, input, option, textarea{
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: gray;
+}
